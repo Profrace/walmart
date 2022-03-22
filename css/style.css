@@ -1,0 +1,339 @@
+/*null*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*-----*/
+html, body {
+	font-family: Bogle, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	flex: 1 1 auto;
+}
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.header{
+	top: 0;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	background-color: #0170ca;
+	height: 50px;
+}
+.header__body{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0px;
+}
+.header__logo img{
+	background-color: #fff;
+	height: 40px;
+	border-radius: 10px;
+	padding: 5px;
+}
+.header__phone{
+	color: #fff;
+	font-size: 20px;
+}
+.header__phone a{
+	color: #000;
+	font-size: 20px;
+	background-color: #fec31f;
+	border-radius: 10px;
+	padding: 5px;
+}
+.header__phone a:hover{
+	background-color: #ffd152;
+}
+.block1{
+	top: 50px;
+	position: relative;
+	min-height: 100vh;
+	margin: 0px 0px 70px 0px;
+}
+.block1__body{
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 100vh;
+	position: relative;
+	z-index: 50;
+	color: #fff;
+	padding: 20px 50px;
+}
+.block1__headline{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0px 0px 20px 0px;
+	
+}
+.block1__subhead{
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0px 0px 20px 0px;
+
+}
+.block1__button, .block4__button{
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #000;
+	background-color: #fec31f;
+	transition: all 0.5s;
+}
+.block1__button:hover{
+	background-color: #ffd152;
+}
+.block1__video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.block2{
+	margin: 0px 0px 50px 0px;
+}
+.block2__title{
+	text-align: center;
+	padding: 20px 0px;
+	font-weight: 700;
+}
+.block2__title h2{
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+}
+.block2__title h3{
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.block2__items{
+	display: flex;
+	margin: 0px 0px 20px 0px;
+}
+.block2__item{
+	padding: 0px 20px;
+}
+.block2__item p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.block2__item img{
+	width: 100%;
+	border-radius: 30px;
+	margin: 0px 0px 20px 0px;
+	animation: box-shadow 1s linear infinite alternate;
+}
+@keyframes box-shadow{
+	0%{
+		box-shadow: 0 0 15px 10px #fec31f;
+	}
+	100%{
+		box-shadow: 0 0 15px 10px #0170ca;
+	}
+}
+.block3{
+	margin: 0px 0px 50px 0px;
+	padding: 50px 0px;
+	border-radius: 30px;
+	box-shadow:
+	inset 1px 1px 25px #fec31f,
+	inset 1px -1px 25px #fec31f,
+	inset -1px 1px 25px #fec31f,
+	inset -1px -1px 25px #fec31f;
+}
+.block3__headline{
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	padding: 0px 0px 30px 0px;
+}
+.list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.list__item{
+	font-size: 24px;
+	display: inline-block;
+	width: 45%;
+	padding: 10px 5px 15px 50px;
+	background: url(../img/icons/favicon.ico) 10px 8px/25px no-repeat;
+	border-radius: 20px;
+	background-color: #0170ca;
+	margin: 20px;
+	transition: all 0.5s;
+}
+.list__item:hover{
+	background-color: #fec31f;
+}
+.list__item h3{
+	font-weight: 700;
+	padding: 0px 0px 20px 0px;
+}
+.block4{
+	height: 100%;
+	overflow: hidden;
+	border-radius: 30px;
+}
+.block4__bg{
+	position: relative;
+	top: -1000px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: auto;
+}
+.block4__gradient{
+	position: absolute;
+	height: 3500px;
+	width: 3500px;
+	animation: gradient-rotate 10s linear infinite;
+	z-index: -20;
+}
+@keyframes gradient-rotate{
+	0%{
+		background-image: linear-gradient(#0170ca, #fec31f);
+	}
+	100%{
+		transform: rotate(360deg);
+		background-image: linear-gradient(#0170ca, #fec31f);
+	}
+}
+.block4__svg{
+	position: relative;
+	padding: 20px 0px 0px 0px;
+}
+.block4__svg svg{
+	position: absolute;
+	width: 150px;
+}
+.block4__svg svg:nth-child(1){
+	top: 150px;
+	left: -100px;
+}
+.block4__svg svg:nth-child(2){
+	top: 400px;
+	left: -5%;
+}
+.block4__svg svg:nth-child(3){
+	left: 2%;
+	top: 10px;
+}
+.block4__svg svg:nth-child(4){
+	top: 20px;
+	left: 20%;
+}
+.block4__svg svg:nth-child(5){
+	left: 60%;
+}
+.block4__svg svg:nth-child(6){
+	left: 40%;
+}
+.block4__svg svg:nth-child(7){
+	left: 80%;
+}
+.block4__svg svg:nth-child(8){
+	top: 60px;
+	left: 95%;
+}
+.block4__svg svg:nth-child(9){
+	left: 100%;
+	top: 250px;
+}
+.block4__svg svg:nth-child(10){
+	left: 95%;
+	top: 400px;
+}
+.block4__body{
+	padding: 150px 0px 0px 0px;
+	position: relative;
+	z-index: 5;
+}
+.block4__title{
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+	padding: 0px 0px 20px 0px;
+	letter-spacing: 3px;
+}
+.block4__text{
+	padding: 20px 60px;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.block4__items{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0px;
+}
+.slide__item img{
+	width: 300px;
+	border-radius: 20px;
+}
+.footer{
+	max-height: 250px;
+	background-color: #e6e6e6;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	padding: 10px 0px;
+}
+.footer__contacts{
+	display: flex;
+	justify-content: space-between;
+}
+.footer__home{
+	display: block;
+}
+.footer a{
+	display: block;
+	color: #666;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.help__link a{
+	display: inline-block;
+}
+.help__link img{
+	width: 30px;
+}
+.title{
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px;
+}
+.keep__input{
+	height: 50px;
+	padding: 0px 0px 0px 10px;
+}
+.keep__input input{
+	border: 1px solid #666;
+}
+.keep__input button{
+	background-color: rgb(255, 195, 31);
+	height: 45px;
+	width: 70px;
+	text-transform: uppercase;
+}
